@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dietary supplements research</title>
+		<meta charset="utf-8">
+
+		<link href='assets/img/favicon.png' rel='icon'>
+
+		<script src="https://d3js.org/d3.v5.min.js"> </script>
+
+		<script src="https://use.fontawesome.com/9918ef7b1b.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+		<link rel="stylesheet" type="text/css"
+			  href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			  crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			  crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+	</head>
+	
+	<body>
+			<!-- header -->
+			<header class="header header--fixed">
+				<div class="container">
+					<nav class="onepage-nav">
+						<!-- onepage-menu -->
+						<ul class="onepage-menu">
+							<li class="current-menu-item"><a href="#home">Home</a>
+							</li>
+							<li><a href="#supplements">About supplements</a>
+							</li>
+							<li><a href="#researching">About researching</a>
+							</li>
+							<li><a href="#graph_1">Bubble chart</a>
+							</li>
+							<li><a href="#graph_2">Bar chart</a>
+							</li>
+							<li><a href="#graph_3">Pie chart</a>
+							</li>
+							<li><a href="#graph_4">Scatter plot</a>
+							</li>
+							<li><a href="#links">Useful links</a>
+							</li>
+						</ul>
+						<!-- onepage-menu -->
+					</nav>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- hero -->
+			<div class="hero" id="home" style="background-image: url('assets/img/bg/hero.jpg');" >
+				<div class="hero__wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-9 ">
+								<h1 class="hero__title">Researching dietary supplements using data analysis
+								</h1>
+								<p class="hero__text">Supplement research based on data from the iHerb online
+									store analyzes the popularity and effectiveness of vitamins, minerals, amino acids,
+									fats, and natural dietary supplements. The study contains an independent analysis
+									of well-known brands, the cost and quality of their products</p>
+							</div>
+						</div>
+						<span id="back-to-down"><i class="pe-7s-angle-down"></i></span>
+					</div>
+				</div>
+			</div><!-- end hero -->
+
+			<!-- supplements section -->
+			<section class="section" id="supplements">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<!-- slide-image -->
+							<div class="slide-image">
+								<!-- swiper front-->
+								<div class="swiper swiper-container slide-image__front"
+									 data-options='{"slidesPerView":1,"spaceBetween":0}'>
+									<div class="swiper-wrapper">
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/1.jpg');"></div>
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/2.jpg');"></div>
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/3.jpg');"></div>
+									</div>
+									<!-- swiper-switch-->
+									<div class="swiper-switch">
+									</div><!-- end swiper-switch-->
+								</div><!-- end swiper front -->
+
+								<!-- swiper back -->
+								<div class="swiper swiper-container slide-image__back"
+									 data-options='{"slidesPerView":1,"spaceBetween":0}'>
+									<div class="swiper-wrapper">
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/1_1.jpg');"></div>
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/2_2.jpg');"></div>
+										<div class="slide-item"
+											 style="background-image: url('assets/img/about/3_3.jpg');"></div>
+									</div>
+								</div><!-- end swiper back -->
+							</div><!-- end slide-image -->
+						</div>
+						<!-- supplements info -->
+						<div class="col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">What are dietary supplements?</h2>
+							</div><!-- end title -->
+							<p class="fz-16">The idea behind dietary supplements is to deliver nutrients that may
+								not be consumed in sufficient quantities. When consuming a healthy diet and purchasing
+								a reliable product, many dietary supplements have been shown to be effective and very
+								beneficial to health.</p>
+							<p class="fz-16">The changing lifestyles and increasing disposable incomes are the
+								key factors for the rising demand for dietary supplements. Dietary supplements
+								are widely available in drug stores, grocery stores, fitness centers, and online.
+								Manufacturers offer a wide variety of supplements to help improve the health.
+								Dietary supplements can be vitamins, minerals, amino acids, fatty acids, and other
+								substances delivered in the form of tablets, capsules, liquid, etc.</p>
+						</div><!-- end supplements info -->
+					</div>
+
+					<!-- swiper swiper-container slides -->
+					<div class="swiper swiper-container"
+						 data-options='{"slidesPerView":3,"spaceBetween":30,"autoplay":2500}'>
+						<div class="swiper-wrapper">
+							<!-- slide vitamins -->
+							<div class="slide">
+								<div class="slide__icon"><i class="fa fa-sun-o"></i></div>
+								<h3 class="slide__title"><a href="https://en.wikipedia.org/wiki/Vitamin"
+															target="_blank">Vitamins</a></h3>
+								<p class="slide__text">Vitamins A, C, D, E, K, B complex
+									(B1, B2, B3, B5, B6 group, B7, B9, B12) and choline</p>
+							</div><!-- end slide vitamins -->
+
+							<!-- slide minerals -->
+							<div class="slide">
+								<div class="slide__icon"><i class="fa fa-diamond"></i></div>
+								<h3 class="slide__title"><a href="https://en.wikipedia.org/wiki/Mineral_(nutrient)"
+															target="_blank">Minerals</a></h3>
+								<p class="slide__text">Chromium, cobalt, copper, iodine, iron,
+									manganese, molybdenum, selenium, zinc</p>
+							</div><!-- end slide minerals -->
+
+							<!-- slide amino acids -->
+							<div class="slide">
+								<div class="slide__icon"><i class="pe-7s-gym"></i></div>
+								<h3 class="slide__title"><a href="https://en.wikipedia.org/wiki/Amino_acid"
+															target="_blank">Amino acids</a></h3>
+								<p class="slide__text">BCAA, histidine, lysine, methionine, phenylalanine,
+									threonine, tryptophan, etc.</p>
+							</div><!-- end slide amino acids -->
+
+							<!-- slide superfoods -->
+							<div class="slide">
+								<div class="slide__icon"><i class="fa fa-leaf"></i></div>
+								<h3 class="slide__title"><a href="https://en.wikipedia.org/wiki/Superfood"
+															target="_blank">Greens & Superfoods</a></h3>
+								<p class="slide__text">Elderberry sambucus, algae, coconut supplements,
+									maca, chlorophyll, etc.</p>
+							</div><!-- end slide superfoods -->
+
+							<!-- slide omegas -->
+							<div class="slide">
+								<div class="slide__icon"><i class="pe-7s-paint-bucket"></i></div>
+								<h3 class="slide__title"><a href="https://en.wikipedia.org/wiki/Fish_oil"
+															target="_blank">Fish Oil & Omegas</a></h3>
+								<p class="slide__text">Omega-3 fish oil, krill oil, flax seed supplements, etc.</p>
+							</div><!-- end slide omegas -->
+						</div>
+					</div><!-- end swiper swiper-container slides -->
+				</div>
+			</section>
+			<!-- end supplements section -->
+
+
+			<!-- section researching -->
+			<section class="section " id="researching">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Our researching</h2>
+							</div><!-- end title -->
+							<p class="fz-16">Supplement research based on data from the iHerb.com online store
+								analyzes the popularity and effectiveness of vitamins, minerals, amino acids, fats and
+								natural dietary supplements. In addition, the work contains an independent analysis
+								of well-known brands, the cost and quality of their products. The project was created
+								with the aim of improving education in the field of nutrition and health.</p>
+							<p class="fz-16">The work consists of several stages: obtaining data by parsing data from
+								the site iHerb.com, processing data, applying descriptive and statistical analysis to
+								data, building hypotheses, visualizing results. Technologies used: BeautifulSoup,
+								requests, pandas, scipy, D3.js. </p>
+							<p class="fz-16">This page is a form for displaying the results of research data based on
+								various graphs. To build the graphs, several datasets were used, obtained from a common
+								set of raw data after parsing the iHerb data. The initial data contains the ID of the
+								product, the name of its type, the name of its category (subspecies), the full name on
+								the site, the brand name, rating, number of reviews, price, link to the product page.
+								As a filter, the condition of the product release form is used: only capsules and
+								tablets. It also excluded new products that do not yet have a rating or reviews on the
+								site. For a complete analysis, items without a specified price were also excluded.</p>
+					</div>
+				</div>
+				<!-- statistics  -->
+				<div class="container">
+					<div class="row">
+							<!-- count supplements -->
+							<div class="col">
+								<div class="countscroller" data-min='0' data-max='2384' data-delay='7'
+									 data-increment="6"></div>
+								<div class="count-name">Supplements</div>
+							</div><!-- end count supplements  -->
+							<!-- count supplements brands -->
+							<div class="col">
+								<div class="countscroller" data-min='0' data-max='180' data-delay='7'
+									 data-increment="3"></div>
+								<div class="count-name">Brands</div>
+							</div><!-- end count supplements brands -->
+							<!-- count reviews -->
+							<div class="col">
+								<div class="countscroller" data-min='0' data-max='1374471' data-delay='7'
+									 data-increment="3200"></div>
+								<div class="count-name">Reviews</div>
+							</div><!-- end count reviews -->
+					</div>
+				</div> <!-- end statistics  -->
+			</section>
+			<!-- end section researching -->
+
+			<!-- section graph_1 -->
+			<section class="section" id="graph_1">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Bubble chart of price and rating
+									distribution by supplements category</h2>
+							</div><!-- end title -->
+							<!-- graph1 -->
+							<div class="graph1">
+							</div>
+							<!-- end graph1 -->
+							<p class="fz-16">The bubble chart helps you analyze the price,
+								popularity, and rating of nutritional supplements. The bubble chart reflects
+								the type and closeness of the relationship between variables, helps to see the
+								correlation between values. Thus, it is possible to display three-dimensional
+								information on one flat diagram. An additional informational load is also carried by
+								the color, which reflects belonging to a certain type of supplements (vitamins,
+								minerals, amino acids, fish oil & omegas, greens & superfoods).</p>
+							<p class="fz-16">The data contains information on the mean price, mean rating, and mean
+								popularity of each category of the five types of nutritional supplements.
+								The horizontal X-axis shows the mean price of each category of a certain
+								type of supplement. The vertical y-axis shows the mean rating of each category
+								for a particular type of supplement. The size (diameter or area) of each
+								bubble is proportional to the mean popularity of each category for a particular
+								type of supplement based on the number of reviews.</p>
+							<p class="fz-16">The graph is interactive. When you hover over the name of the type of
+								nutritional supplements on the right, the bubbles (categories) of only the selected
+								type of nutritional supplements will be highlighted on the bubble chart. When you hover
+								over the bubbles themselves, a tooltip appears with the category name,
+								mean price, and mean rating.</p>
+							<p class="fz-16">From this visualization, insights can be drawn to help you better
+								understand how the supplement market works. The most highly rated category is a
+								fruit blends from the price segment under 1000 rubles. The lowest rated category is
+								acai, also from the price segment up to 1000 rubles. It is interesting to note that
+								the "best" category is from the least popular categories, and the "worst" from the most
+								popular ones, although they are in the same price segment. In general, vitamins have a
+								higher rating (rating > 4.5), while greens & superfoods and amino acids have a lower
+								rating (rating < 4.5). Most dietary supplements are rated in the region of 4.5. It is
+								difficult to draw conclusions about the correlation between price and rating.</p>
+							<p class="fz-16">The cheapest supplement category is copper. And the expensive category
+								is krill oil. Moreover, their rating differs significantly among themselves. The cheap
+								category is more highly rated than the expensive one and is less popular than the
+								expensive one. It is also interesting to note that the vitamin complex is much more
+								expensive than the individual vitamins. In general, almost all types of supplements
+								are in the lower price segment (average price < 2000 rubles), except for fish oils &
+								omegas (average price > 2000 rubles). Most supplements have a price tag of
+								less than RUB 2,000. </p>
+							<p class="fz-16">Thus, the bubble chart showed us a weak relationship between price and
+								rating. The diagram allowed us to establish that the average price of all food
+								additives is less than 2000 rubles, and the average rating of all food additives
+								is more than 4.5. The "best" type of supplements are vitamins and fats, and the
+								"worst" are greens & superfoods and amino acids. Acai berries, l-cysteine ​, and maca
+								do not inspire consumer confidence despite their popularity. Zinc, selenium, vitamin D,
+								and elderberry justify their popularity on the basis of the estimated effect. </p>
+					</div>
+				</div>
+			</section><!-- end section graph_1 -->
+
+			<!-- section graph_2 -->
+			<section class="section" id="graph_2">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Bar chart of the amount
+									of supplements produced by popular brands</h2>
+							</div><!-- end title -->
+							<!-- graph2 -->
+							<div class="graph2">
+								<input type="checkbox" class="btn-check graph2" id="btn-check" autocomplete="off">
+								<label class="btn btn-primary button" for="btn-check">SORT VALUES</label>
+							</div><!-- end graph2 -->
+							<p class="fz-16">The bar chart is formed by a string field "Brand" on the X-axis
+								and a numeric field "Frequency" along the Y-axis. The length of each column
+								corresponds to the value of the quantity of dietary supplements produced under a
+								particular brand. This chart is best for comparing values. Based on it, we can
+								determine the top of the most popular brands.</p>
+							<p class="fz-16">The data contains information about the brand name and the amount of
+								nutritional supplements it produces. For the sake of clarity, the graph uses data
+								corresponding to the filter "the number of produced dietary supplements is more
+								than 50". The horizontal X-axis shows the brand name. The vertical y-axis shows the
+								amount of supplements.</p>
+							<p class="fz-16">The graph is interactive. To sort the bars in descending order, thereby
+								easily identifying the top 3 popular brands, you need to click on the "Sort value"
+								button. When you hover the mouse over a bar, the selected bar is highlighted and a
+								tooltip is displayed with the brand name and the amount of supplements it produces.</p>
+							<p class="fz-16">This graph helps to examine the production of large (number of dietary
+								supplements > 50) supplement manufacturers. Most manufacturers have about 50-100
+								positions of supplements presented on the site iHerb.com in the form of tablets
+								and capsules. However, there are three brands (Now Foods, Source Naturals, Solgar)
+								with more than 100 products in production. It is their products that we will analyze
+								in more detail using other charts.</p>
+					</div>
+				</div>
+			</section><!-- end section graph_2 -->
+
+			<!-- section graph_3 -->
+			<section class="section" id="graph_3">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Pie chart of the distribution of types of supplements
+									produced by top brands</h2>
+							</div><!-- end title -->
+							<!-- graph3 -->
+							<div class="graph3">
+								<form>
+									<!-- brand button 1 -->
+									<div class="custom-control custom-radio">
+										<input type="radio" class='custom-control-input graph3' id='Now_Foods'
+											   name="dataset" value="Now_Foods" checked>
+										<label class="custom-control-label" for="Now_Foods">Now Foods</label>
+									</div><!-- end brand button 1 -->
+									<!-- brand button 2 -->
+									<div class="custom-control custom-radio">
+										<input class='custom-control-input graph3' id="Solgar" type="radio"
+											   name="dataset" value="Solgar">
+										<label class="custom-control-label" for="Solgar">Solgar</label>
+									</div><!-- end brand button 2 -->
+									<!-- brand button 3 -->
+									<div class="custom-control custom-radio">
+										<input class='custom-control-input graph3' id="Source_Naturals" type="radio"
+											   name="dataset" value="Source_Naturals">
+										<label class="custom-control-label"
+											   for="Source_Naturals">Source Naturals</label>
+									</div><!-- end brand button 3 -->
+								</form>
+							</div><!-- end graph3 -->
+							<p class="fz-16">Pie chart show you the percentages between categories by dividing the
+								circle into proportional segments. The length of each arc represents a proportional
+								fraction of each category, while the entire circle represents the total of all data
+								equal to 100%. This pie chart is ideal for quickly getting an idea of the proportional
+								distribution of all types of nutritional supplements produced by top brands.</p>
+							<p class="fz-16">The data contains information on the quantity of products for each type
+								of nutritional supplement. Only those brands that were identified in the previous graph
+								as the brands with the largest production (Now Foods, Source Naturals, Solgar) were
+								used in the calculation.</p>
+							<p class="fz-16">The graph is interactive. To see what percentage of each type of
+								supplements is produced by a specific manufacturer, you need to select the required
+								brand from the block located to the right of the graph.</p>
+							<p class="fz-16">Several conclusions were drawn from this visualization. The production
+								of vitamins, amino acids and minerals is most numerous for all brands. For each brand
+								investigated, the greens & superfoods were the smallest in terms of production.
+								Almost half of all Solgar production is made up of vitamins, which makes it more
+								specialized in this type of dietary supplements. The distribution of supplements by
+								type is almost the same for brands Now Foods and Source Naturals. To draw conclusions
+								about the quality and price of the products of the top brands, refer to the following
+								chart.</p>
+					</div>
+				</div>
+			</section><!-- end section graph_3 -->
+
+			<!-- section graph_4 -->
+			<section class="section" id="graph_4">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Scatter plot of price and rating of supplements
+									produced by top brands</h2>
+							</div><!-- end title -->
+							<!-- graph4 -->
+							<div class="graph4">
+							</div><!-- end graph4 -->
+							<p class="fz-16">In scatter plots, dots, arranged in a Cartesian coordinate system,
+								display values in two variables: price and rating. By assigning a variable to each
+								axis, you can determine if there is a relationship or correlation
+								between the two variables.</p>
+							<p class="fz-16">The data contains information about the full name of supplements,
+								its price, rating and manufacturer. The study involved only three brands identified
+								as high-volume brands. The X-axis is the value of the price of supplements, and the
+								Y-axis is the value of the rating. Each color and symbol serve as helping parameters
+								for a more visual highlighting of belonging to a certain cluster, brand.</p>
+							<p class="fz-16">The graph is interactive. When you hover the cursor over a point,
+								the cluster of the current brand is highlighted, that is, all dietary supplements
+								produced by this manufacturer. A tooltip also appears with the full name of the dietary
+								supplement. Along with it, a pop-up inscription appears on the right with the name of
+								the selected brand.</p>
+							<p class="fz-16">The scatter plot showed zero correlation between price and rating for
+								each brand under study. On average, Solgar turned out to be the best brand in the
+								rating (the rating of most supplements is above 4.5). Solgar has few high-end products
+								compared to its competitors. This may be due to the fact that Solgar produces less fat
+								than others, which are considered expensive supplements (based on previous charts). The
+								Source Naturals brand is inferior to its competitors in terms of product quality. The
+								best products of the Solgar company are iron and omega-3, the Now Foods company -
+								vitamins K, D and B-12, and the Source Naturals company - calcium.</p>
+					</div>
+				</div>
+			</section><!-- end section graph_4 -->
+
+			<!-- section links -->
+			<section class="section " id="links">
+				<div class="container">
+					<div class="row">
+							<!-- title -->
+							<div class="title">
+								<h2 class="title_section">Useful links</h2>
+							</div><!-- end title -->
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<!-- link 1 -->
+							<div>
+								<div class="link__image"><a href="https://examine.com" target="_blank"><img
+										src="assets/img/links/1.jpg" alt=""/></a></div>
+								<div class="link__body">
+									<h2 class="link__title">
+										<a href="https://examine.com"
+										   target="_blank">Examine analyzes and the latest scientific research</a></h2>
+									<p class="link__text">Examine is the largest database of nutrition and
+										supplement research on the Internet. Founded in early 2011, project mission
+										is to analyze the full body of evidence to help you make healthy choices
+										when purchasing nutritional supplements </p>
+								</div>
+							</div><!-- end link 1 -->
+						</div>
+						<div class="col-lg-4">
+							<!-- link 2 -->
+							<div>
+								<div class="link__image">
+									<a href="https://ods.od.nih.gov/" target="_blank">
+										<img src="assets/img/links/2.jpg" alt=""/></a></div>
+								<div class="link__body">
+									<h2 class="link__title">
+										<a href="https://ods.od.nih.gov/"
+										   target="_blank">Strengthen knowledge and understanding of supplements</a></h2>
+									<p class="link__text">The Office of Dietary Supplements (ODS) at the National
+										Institutes of Health introduces the website — the place for reliable,
+										science-based answers to your questions about vitamins, minerals, and other
+										dietary supplement ingredients</p>
+								</div>
+							</div><!-- end link 2 -->
+
+						</div>
+						<div class="col-lg-4">
+							<!-- link 3 -->
+							<div>
+								<div class="link__image">
+									<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/167942/Nutrient_analysis_of_fruit_and_vegetables_-_Summary_Report.pdf" target="_blank"><img src="assets/img/links/3.jpg" alt=""/></a></div>
+								<div class="link__body">
+									<h2 class="link__title">
+										<a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/167942/Nutrient_analysis_of_fruit_and_vegetables_-_Summary_Report.pdf" target="_blank">Check nutrition facts for fruit and vegetables</a></h2>
+									<p class="link__text">Most frequently consumed raw fruits and vegetables were
+										analyzed for energy and a range of nutrients including carbohydrate, fat,
+										fatty acids (including trans), protein, and a full range
+										of vitamins and minerals</p>
+								</div>
+							</div><!-- end link 3 -->
+						</div>
+					</div>
+				</div>
+			</section><!-- end section links -->
+
+		<!-- vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+			<script type="text/javascript" src="assets/js/countscroller.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript"  src="assets/js/gr_1.js"></script>
+		<script type="text/javascript"  src="assets/js/gr_2.js"></script>
+			<script type="text/javascript"  src="assets/js/gr_3.js"></script>
+		<script type="text/javascript"  src="assets/js/gr_4.js"></script>
+
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+				crossorigin="anonymous"></script>
+	</body>
+</html>
+
+
+
+
+

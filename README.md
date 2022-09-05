@@ -1,5 +1,5 @@
 # Dietary-Supplements-Analysis
-Research article on dietary supplements based on iHerb data
+Research article on dietary supplements based on iHerb data.
 
 The iHerb supplement research is an analysis of the popularity and effectiveness of vitamins, minerals, amino acids, fats and natural supplements based on user ratings. In addition, the work contains an independent analysis of well-known brands, the cost and quality of their products. The project was created to improve nutrition and health education.
 

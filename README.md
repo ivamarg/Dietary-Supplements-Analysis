@@ -25,3 +25,5 @@ The parser returns a CSV file with the following information for each item:
 - Serving size
 - The composition of one serving (for complex supplements)
 
+## Result
+![demo](https://user-images.githubusercontent.com/112548290/188622606-4899c32f-a117-4ed7-81cf-ea947dfa8095.gif)
